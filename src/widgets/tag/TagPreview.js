@@ -1,3 +1,5 @@
+import React from 'react';
+
 const TagPreview = React.createClass({
   render: function() {
     return h('ul', {},

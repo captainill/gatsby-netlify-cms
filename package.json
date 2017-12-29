@@ -18,7 +18,8 @@
     "immutable": "^3.8.2",
     "lodash": "^4.17.4",
     "react-immutable-proptypes": "^2.1.0",
-    "react-load-script": "0.0.6"
+    "react-load-script": "0.0.6",
+    "react-tag-autocomplete": "^5.5.0"
   },
   "keywords": [
     "gatsby"

@@ -5,8 +5,8 @@ import Features from 'site/components/Features'
 import Testimonials from 'site/components/Testimonials'
 import Pricing from 'site/components/Pricing'
 
-//import TagControl from 'site/widgets/tag/TagControl';
-//import TagPreview from 'site/widgets/tag/TagPreview';
+import TagControl from 'site/widgets/tag/TagControl';
+import TagPreview from 'site/widgets/tag/TagPreview';
 
 import CategoriesControl from 'site/widgets/categories/CategoriesControl';
 import CategoriesPreview from 'site/widgets/categories/CategoriesPreview';
@@ -73,6 +73,5 @@ CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
 
-//CMS.registerWidget('multiselect', TagControl, TagPreview)
-
+CMS.registerWidget('tag', TagControl, TagPreview)
 CMS.registerWidget('categories', CategoriesControl, CategoriesPreview)
