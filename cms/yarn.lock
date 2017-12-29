@@ -2427,9 +2427,9 @@ nan@^2.3.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.8.0.tgz#ed715f3fe9de02b57a5e6252d90a96675e1f085a"
 
-netlify-cms@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-1.0.1.tgz#3323a2547599d040d69928cfad4837cd1b31473e"
+netlify-cms@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/netlify-cms/-/netlify-cms-1.0.3.tgz#444dde9d70c33e06a169439514d74ea7f604cd7c"
   dependencies:
     classnames "^2.2.5"
     create-react-class "^15.6.0"
@@ -2438,6 +2438,7 @@ netlify-cms@^1.0.1:
     gray-matter "^3.0.6"
     history "^4.7.2"
     immutable "^3.7.6"
+    is-hotkey "^0.1.1"
     js-base64 "^2.1.9"
     js-yaml "^3.10.0"
     jwt-decode "^2.1.0"
