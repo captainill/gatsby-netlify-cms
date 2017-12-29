@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
+  "name": "gatsby-netlify-cms",
   "description": "Example Gatsby, and Netlify CMS project",
   "version": "1.0.0",
-  "author": "Austin Green",
+  "author": "JT",
   "dependencies": {
     "babel-runtime": "^6.26.0",
     "bulma": "^0.6.0",
