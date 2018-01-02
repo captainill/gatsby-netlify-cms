@@ -1,6 +1,6 @@
 ---
 title: javascript
-description: desc
+description: Javascript
 path: /tags/javascript
 ---
 
