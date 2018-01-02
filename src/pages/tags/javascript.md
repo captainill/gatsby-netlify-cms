@@ -1,8 +1,6 @@
 ---
-title: Javascript
-category:
-  - cat1
-  - cat2
+title: javascript
 description: desc
+path: /tags/javascript
 ---
 
