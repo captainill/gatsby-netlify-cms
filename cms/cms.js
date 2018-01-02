@@ -5,8 +5,8 @@ import Features from 'site/components/Features'
 import Testimonials from 'site/components/Testimonials'
 import Pricing from 'site/components/Pricing'
 
-import TagControl from 'site/widgets/tag/TagControl';
-import TagPreview from 'site/widgets/tag/TagPreview';
+// import TagControl from 'site/widgets/tag/TagControl';
+// import TagPreview from 'site/widgets/tag/TagPreview';
 
 import CategoriesControl from 'site/widgets/categories/CategoriesControl';
 import CategoriesPreview from 'site/widgets/categories/CategoriesPreview';
@@ -18,13 +18,17 @@ import { BlogPostTemplate } from 'site/templates/blog-post';
 const AboutPagePreview = ({ entry, widgetFor }) =>
   <AboutPageTemplate title={entry.getIn(['data', 'title'])} content={widgetFor('body')} />;
 
-const BlogPostPreview = ({ entry, widgetFor }) => (
-  <BlogPostTemplate
+const BlogPostPreview = ({ entry, widgetFor }) => {
+  const entryTags = entry.getIn(['data', 'entry_tags'])
+  const tags = entryTags ? entryTags.toJS() : []
+
+  return <BlogPostTemplate
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
     title={entry.getIn(['data', 'title'])}
-  />
-)
+    tags={tags}
+  />;
+}
 
 const ProductPagePreview = ({ entry, widgetFor, getAsset }) => {
   const entryBlurbs = entry.getIn(['data', 'intro', 'blurbs'])
@@ -73,5 +77,5 @@ CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
 
-CMS.registerWidget('tag', TagControl, TagPreview)
+// CMS.registerWidget('tag', TagControl, TagPreview)
 CMS.registerWidget('categories', CategoriesControl, CategoriesPreview)

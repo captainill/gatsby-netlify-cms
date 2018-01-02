@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import Script from 'react-load-script';
+import Tags from '../components/Tags';
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -40,6 +41,7 @@ export default class IndexPage extends React.Component {
                   <span> &bull; </span>
                   <small>{post.frontmatter.date}</small>
                 </p>
+                <Tags tags={post.frontmatter.entry_tags} />
                 <p>
                   {post.excerpt}
                   <br />
@@ -66,6 +68,10 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
+            entry_tags {
+              id
+              name
+            }
             templateKey
             date(formatString: "MMMM DD, YYYY")
             path

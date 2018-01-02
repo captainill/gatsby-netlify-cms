@@ -13,7 +13,6 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Category", name: "category", widget: "categories"}
       - {label: "Description", name: "description", widget: "text"}
 
   - name: "blog"
@@ -25,8 +24,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Associated Tags", name: "tags", required: false, widget: relation, collection: tags, searchFields: [title], valueField: title}
-      - {label: "Custom Tag (Multi Select)", name: "custom-tag", widget: "tag"}
+      - {label: "Custom Tag", name: "entry_tags", widget: "tag", collection: tags, searchFields: [title], valueField: title, default: [] }
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}

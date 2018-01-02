@@ -23,6 +23,7 @@ module.exports = {
     ],
   },
   resolve: {
+    symlinks: false,
     alias: {
       site: '../src/',
     },
