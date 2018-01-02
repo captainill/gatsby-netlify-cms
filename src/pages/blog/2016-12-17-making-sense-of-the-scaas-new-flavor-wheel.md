@@ -2,6 +2,9 @@
 templateKey: blog-post
 path: /making-sense
 title: Making sense of the SCAA’s new Flavor Wheell
+entry_tags:
+  - id: 0
+    name: microbiome
 date: 2016-12-17T15:04:10.000Z
 description: >-
   The Coffee Taster’s Flavor Wheel, the official resource used by coffee
