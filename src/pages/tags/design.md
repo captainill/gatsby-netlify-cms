@@ -1,6 +1,6 @@
 ---
 title: design
-description: design!
+description: Design!
 path: /tags/design
 ---
 
