@@ -1,6 +1,6 @@
 ---
 title: microbiome
-description: this is the microbiome tag!
+description: this is the microbiome tag
 path: /tags/microbiome
 ---
 
