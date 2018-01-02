@@ -18,13 +18,17 @@ import { BlogPostTemplate } from 'site/templates/blog-post';
 const AboutPagePreview = ({ entry, widgetFor }) =>
   <AboutPageTemplate title={entry.getIn(['data', 'title'])} content={widgetFor('body')} />;
 
-const BlogPostPreview = ({ entry, widgetFor }) => (
-  <BlogPostTemplate
+const BlogPostPreview = ({ entry, widgetFor }) => {
+  const entryTags = entry.getIn(['data', 'entry_tags'])
+  const tags = entryTags ? entryTags.toJS() : []
+
+  return <BlogPostTemplate
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
     title={entry.getIn(['data', 'title'])}
-  />
-)
+    tags={tags}
+  />;
+}
 
 const ProductPagePreview = ({ entry, widgetFor, getAsset }) => {
   const entryBlurbs = entry.getIn(['data', 'intro', 'blurbs'])
